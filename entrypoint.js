@@ -133,8 +133,8 @@ async function marpCli(userConfigFilePath, config) {
     "--config-file",
     configPath,
     "-I",
-    "--html",
     path.join(path.dirname(userConfigFilePath), config.inputDir),
+    "--html",
   ]);
 
   await fs.unlink(configPath);
